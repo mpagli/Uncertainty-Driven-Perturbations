@@ -91,11 +91,6 @@ def get_udp_perturbation(model, X, y, eps, alpha, attack_iters, rs=False, clamp_
   if sample_iters == 'uniform':
     shape = [delta.shape[0]] + [1] * (len(delta.shape)-1)
     sampled_iters = torch.randint(1,attack_iters+1,shape).expand_as(delta).to(X.device)
-  elif sample_iters == 'not-uniform':
-    shape = [delta.shape[0]] + [1] * (len(delta.shape)-1)
-    sampled_iters = torch.randint(1,attack_iters+1,shape).expand_as(delta).to(X.device)
-    # set half to attack_iters
-    sampled_iters[:sampled_iters.shape[0]//2] = attack_iters
 
   delta.requires_grad = True
 

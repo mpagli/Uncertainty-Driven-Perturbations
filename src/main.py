@@ -47,7 +47,7 @@ def get_args():
     parser.add_argument('--reg_scalar', default=1.0, type=float)
     parser.add_argument('--attack_iters', default=-1, type=int)
     parser.add_argument('--attack_rs', action='store_true')
-    parser.add_argument('--udp_sample_iters', default='uniform', choices=['uniform', 'not-uniform', 'none'])
+    parser.add_argument('--udp_sample_iters', default='uniform', choices=['uniform', 'none'])
     parser.add_argument('--train_w_a_scheduler', action='store_true')
     # Dataset and model
     parser.add_argument('--model', default='lenet', choices=['lenet', 'mlp', 'preactresnet18'])
