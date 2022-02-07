@@ -23,4 +23,4 @@ python ./src/main.py --adv_training pgd --eps 0.2 --alpha 0.015 --attack_iters 2
 # TRADES
 python ./src/main.py --adv_training trades --eps 0.2 --alpha 0.015 --attack_iters 20 --seed 0 --epochs 100 --reg_scalar 1.0 --dataset fashion-mnist --lr 0.001 --model lenet --opt adam --test-with-autoattack
 python ./src/main.py --adv_training trades --eps 0.2 --alpha 0.015 --attack_iters 20 --seed 1 --epochs 100 --reg_scalar 1.0 --dataset fashion-mnist --lr 0.001 --model lenet --opt adam --test-with-autoattack
-python ./src/main.py --adv_training trades --eps 0.2 --alpha 0.015 --attack_iters 20 --seed 1 --epochs 100 --reg_scalar 1.0 --dataset fashion-mnist --lr 0.001 --model lenet --opt adam --test-with-autoattack
+python ./src/main.py --adv_training trades --eps 0.2 --alpha 0.015 --attack_iters 20 --seed 2 --epochs 100 --reg_scalar 1.0 --dataset fashion-mnist --lr 0.001 --model lenet --opt adam --test-with-autoattack
